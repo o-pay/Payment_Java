@@ -10,7 +10,7 @@ import allPay.payment.integration.domain.InvoiceObj;
 import allPay.payment.integration.domain.QueryCreditCardPeriodInfoObj;
 
 /**
- * ¦¹¬°°Ñ¦Ò¥Îªº½d¨Òµ{¦¡½X¡A¨Ã¤£§¹¾ã¡A½Ğ¤Åª½±µ®M¥Î¦b±zªº°Ó·~Àô¹Ò¡A¥H§K¥X¿ù
+ * æ­¤ç‚ºåƒè€ƒç”¨çš„ç¯„ä¾‹ç¨‹å¼ç¢¼ï¼Œä¸¦ä¸å®Œæ•´ï¼Œè«‹å‹¿ç›´æ¥å¥—ç”¨åœ¨æ‚¨çš„å•†æ¥­ç’°å¢ƒï¼Œä»¥å…å‡ºéŒ¯
  * @author mark.chiu
  *
  */
@@ -18,87 +18,87 @@ public class SampleCode {
 	private AllInOne all;
 	
 	public void initial(){
-		//¦¹¨BÆJ¬°³z¹LAllInOne«Øºc¤l¨Ó¹êÅé¤Æ¦¹Ãş§O¡A¶¶«K¿é¤Jlog4j.propertiesªº¦ì¸m¸ô®|
-		//­Y¤£»İ­n²£¥ÍlogÀÉ¡A¥iª½±µ¦blog4j.properties§ó§ï³]©w¡A©Î¬O±N¦¹¨BÆJ©Ò¿é¤Jªº¦r¦ê§ï¬°""
+		//æ­¤æ­¥é©Ÿç‚ºé€éAllInOneå»ºæ§‹å­ä¾†å¯¦é«”åŒ–æ­¤é¡åˆ¥ï¼Œé †ä¾¿è¼¸å…¥log4j.propertiesçš„ä½ç½®è·¯å¾‘
+		//è‹¥ä¸éœ€è¦ç”¢ç”Ÿlogæª”ï¼Œå¯ç›´æ¥åœ¨log4j.propertiesæ›´æ”¹è¨­å®šï¼Œæˆ–æ˜¯å°‡æ­¤æ­¥é©Ÿæ‰€è¼¸å…¥çš„å­—ä¸²æ”¹ç‚º""
 		all = new AllInOne("XXX/OOO");
 	}
 	
 	public String sampleAioALL(){
 		initial();
-		//¹êÅé¤Æ¥X©Ò»İ­nªºdomainª«¥ó
+		//å¯¦é«”åŒ–å‡ºæ‰€éœ€è¦çš„domainç‰©ä»¶
 		AioCheckOutALL aio = new AioCheckOutALL();
-		//°Ó®a«á¥x¦Û¦æ²£¥Í¤£­«½Æªº¬y¤ô¸¹¡A©Î¬OUUIDÀH¾÷²£¥Í¤£­«½Æªº¼t°Ó¥æ©ö½s¸¹(°O±o§â'-'Âo±¼¡A¶È±µ¨ü­^¤å¦r»P¼Æ¦r)
+		//å•†å®¶å¾Œå°è‡ªè¡Œç”¢ç”Ÿä¸é‡è¤‡çš„æµæ°´è™Ÿï¼Œæˆ–æ˜¯UUIDéš¨æ©Ÿç”¢ç”Ÿä¸é‡è¤‡çš„å» å•†äº¤æ˜“ç·¨è™Ÿ(è¨˜å¾—æŠŠ'-'æ¿¾æ‰ï¼Œåƒ…æ¥å—è‹±æ–‡å­—èˆ‡æ•¸å­—)
 		aio.setMerchantTradeNo("XXX");
-		//°Ó®a«á¥x¶ñ¤J·|­û¥æ©ö®É¶¡(¤£¤@©w¬O·í¤U¡A¨Ì¾Ú»İ¨D¦Û¦æ§PÂ_¶ñ¤J)
+		//å•†å®¶å¾Œå°å¡«å…¥æœƒå“¡äº¤æ˜“æ™‚é–“(ä¸ä¸€å®šæ˜¯ç•¶ä¸‹ï¼Œä¾æ“šéœ€æ±‚è‡ªè¡Œåˆ¤æ–·å¡«å…¥)
 		aio.setMerchantTradeDate("xxxx/xx/xx xx:xx:xx");
 
-		//«ØÄ³±q«áºİDB¼´¨ú¸ê®Æ¶ñ¤J¡A¤Å±q«eºİ¿é¤J¥H§K¾DÂ«§ï
+		//å»ºè­°å¾å¾Œç«¯DBæ’ˆå–è³‡æ–™å¡«å…¥ï¼Œå‹¿å¾å‰ç«¯è¼¸å…¥ä»¥å…é­ç«„æ”¹
 		aio.setTotalAmount("xx");
 		aio.setTradeDesc("XX");
 		aio.setItemName("XX");
 		
-		//¥i¥H±q«eºİ¨Ï¥ÎªÌ¶ñ¤J¸ê®Æ
+		//å¯ä»¥å¾å‰ç«¯ä½¿ç”¨è€…å¡«å…¥è³‡æ–™
 		aio.setRemark("XX");
 		aio.setUseRedeem("XX");
 		
-		//¥H¤W¸ê®Æ¤£§¹¥ş¡A¶È¨Ñ°Ñ¦Ò¦p¦ó©ñ¤J¸ê®Æ
+		//ä»¥ä¸Šè³‡æ–™ä¸å®Œå…¨ï¼Œåƒ…ä¾›åƒè€ƒå¦‚ä½•æ”¾å…¥è³‡æ–™
 		
 		
-		//©I¥sAllInOne¤¤¬ÛÀ³ªºmethod¡A²£¥Íhtml form¦r¦ê(§tJavaScript Submit)¤§«á¦A©ñ¤J«eºİ§Y¥i
-		//¦¹µ§¥æ©ö¼ÒÀÀ¤£¶}µo²¼¡AInvoiceObj½Ğ±anull
+		//å‘¼å«AllInOneä¸­ç›¸æ‡‰çš„methodï¼Œç”¢ç”Ÿhtml formå­—ä¸²(å«JavaScript Submit)ä¹‹å¾Œå†æ”¾å…¥å‰ç«¯å³å¯
+		//æ­¤ç­†äº¤æ˜“æ¨¡æ“¬ä¸é–‹ç™¼ç¥¨ï¼ŒInvoiceObjè«‹å¸¶null
 		String html = all.aioCheckOut(aio, null);
 		return html;
 	}
 	
 	public String sampleAioPeriod(){
 		initial();
-		//¹êÅé¤Æ¥X©Ò»İ­nªºdomainª«¥ó
+		//å¯¦é«”åŒ–å‡ºæ‰€éœ€è¦çš„domainç‰©ä»¶
 		AioCheckOutPeriod aio = new AioCheckOutPeriod();
-		//°Ó®a«á¥x¦Û¦æ²£¥Í¤£­«½Æªº¬y¤ô¸¹¡A©Î¬OUUIDÀH¾÷²£¥Í¤£­«½Æªº¼t°Ó¥æ©ö½s¸¹(°O±o§â'-'Âo±¼¡A¶È±µ¨ü­^¤å¦r»P¼Æ¦r)
+		//å•†å®¶å¾Œå°è‡ªè¡Œç”¢ç”Ÿä¸é‡è¤‡çš„æµæ°´è™Ÿï¼Œæˆ–æ˜¯UUIDéš¨æ©Ÿç”¢ç”Ÿä¸é‡è¤‡çš„å» å•†äº¤æ˜“ç·¨è™Ÿ(è¨˜å¾—æŠŠ'-'æ¿¾æ‰ï¼Œåƒ…æ¥å—è‹±æ–‡å­—èˆ‡æ•¸å­—)
 		aio.setMerchantTradeNo("XXX");
-		//°Ó®a«á¥x¶ñ¤J·|­û¥æ©ö®É¶¡(¤£¤@©w¬O·í¤U¡A¨Ì¾Ú»İ¨D¦Û¦æ§PÂ_¶ñ¤J)
+		//å•†å®¶å¾Œå°å¡«å…¥æœƒå“¡äº¤æ˜“æ™‚é–“(ä¸ä¸€å®šæ˜¯ç•¶ä¸‹ï¼Œä¾æ“šéœ€æ±‚è‡ªè¡Œåˆ¤æ–·å¡«å…¥)
 		aio.setMerchantTradeDate("xxxx/xx/xx xx:xx:xx");
 
-		//«ØÄ³±q«áºİDB¼´¨ú¸ê®Æ¶ñ¤J¡A¤Å±q«eºİ¿é¤J¥H§K¾DÂ«§ï
+		//å»ºè­°å¾å¾Œç«¯DBæ’ˆå–è³‡æ–™å¡«å…¥ï¼Œå‹¿å¾å‰ç«¯è¼¸å…¥ä»¥å…é­ç«„æ”¹
 		aio.setTotalAmount("xx");
 		aio.setTradeDesc("XX");
 		aio.setItemName("XX");
 				
-		//¥i¥H±q«eºİ¨Ï¥ÎªÌ¶ñ¤J¸ê®Æ
+		//å¯ä»¥å¾å‰ç«¯ä½¿ç”¨è€…å¡«å…¥è³‡æ–™
 		aio.setRemark("XX");
 		aio.setUseRedeem("XX");
-		//®ø¶OªÌ¥i¿ï¾Ü±ıÁÊ¶Rªº´Á¼Æ(«á¥x¥i¯à­nÅçÃÒ«eºİ©Ò±a¤Jªº¬O§_»P«áºİªº¿ï¶µ¬Û¦P¥H¨¾»R¹ú)
+		//æ¶ˆè²»è€…å¯é¸æ“‡æ¬²è³¼è²·çš„æœŸæ•¸(å¾Œå°å¯èƒ½è¦é©—è­‰å‰ç«¯æ‰€å¸¶å…¥çš„æ˜¯å¦èˆ‡å¾Œç«¯çš„é¸é …ç›¸åŒä»¥é˜²èˆå¼Š)
 		aio.setExecTimes("XX");
-		//«áºİ³]©w
+		//å¾Œç«¯è¨­å®š
 		aio.setPeriodType("XX");
 		aio.setFrequency("XX");
 		aio.setPeriodAmount("XX");
 		
-		//¥H¤W¸ê®Æ¤£§¹¥ş¡A¶È¨Ñ°Ñ¦Ò¦p¦ó©ñ¤J¸ê®Æ
+		//ä»¥ä¸Šè³‡æ–™ä¸å®Œå…¨ï¼Œåƒ…ä¾›åƒè€ƒå¦‚ä½•æ”¾å…¥è³‡æ–™
 		
-		//­YÅU«È»İ­n¹q¤lµo²¼
+		//è‹¥é¡§å®¢éœ€è¦é›»å­ç™¼ç¥¨
 		InvoiceObj invoice = new InvoiceObj();
-		//¨Ï¥ÎªÌ¶ñ¤J
+		//ä½¿ç”¨è€…å¡«å…¥
 		invoice.setCustomerName("XX");
 		invoice.setCustomerAddr("XX");
 		invoice.setCustomerEmail("XX");
 		invoice.setCustomerIdentifier("XX");
 		
-		//¨ä¾l°Ñ¼Æ³£¬O±q«áºİ¨t²Î¦Û°ÊÀ°¥L³]©w
+		//å…¶é¤˜åƒæ•¸éƒ½æ˜¯å¾å¾Œç«¯ç³»çµ±è‡ªå‹•å¹«ä»–è¨­å®š
 		invoice.setRelateNumber("XX");
-		//°Ó«~¸ê°T½Ğ¤Å±q«eºİ­¶­±¨ú±o¡A½Ğ³z¹L°Ó«~ID¥h±q«áºİ¼´¨ú°Ó«~¸ê°T¥H§K¾D±q«e¤èÂ«§ï
+		//å•†å“è³‡è¨Šè«‹å‹¿å¾å‰ç«¯é é¢å–å¾—ï¼Œè«‹é€éå•†å“IDå»å¾å¾Œç«¯æ’ˆå–å•†å“è³‡è¨Šä»¥å…é­å¾å‰æ–¹ç«„æ”¹
 		invoice.setInvoiceItemName("XX");
 		
-		//©I¥sAllInOne¤¤¬ÛÀ³ªºmethod¡A²£¥Íhtml form¦r¦ê(§tJavaScript Submit)¤§«á¦A©ñ¤J«eºİ§Y¥i
-		//¦¹µ§¥æ©ö¼ÒÀÀ¶}µo²¼¡A½Ğ±a¤JInvoiceObj
+		//å‘¼å«AllInOneä¸­ç›¸æ‡‰çš„methodï¼Œç”¢ç”Ÿhtml formå­—ä¸²(å«JavaScript Submit)ä¹‹å¾Œå†æ”¾å…¥å‰ç«¯å³å¯
+		//æ­¤ç­†äº¤æ˜“æ¨¡æ“¬é–‹ç™¼ç¥¨ï¼Œè«‹å¸¶å…¥InvoiceObj
 		String html = all.aioCheckOut(aio, invoice);
 		return html;
 	}
 	
 	public String sampleQueryCreditCardPeriodInfo(){
-		//Queryªº¥\¯à³£Ãş¦ü¡A¦b¦¹¥H¬d¸ß©w´Á©wÃB­q³æ¨Ó°µ½d¨Ò
+		//Queryçš„åŠŸèƒ½éƒ½é¡ä¼¼ï¼Œåœ¨æ­¤ä»¥æŸ¥è©¢å®šæœŸå®šé¡è¨‚å–®ä¾†åšç¯„ä¾‹
 		QueryCreditCardPeriodInfoObj obj = new QueryCreditCardPeriodInfoObj();
-		//¥u¦³·|­û¥æ©ö½s¸¹­n¶ñ¤J
+		//åªæœ‰æœƒå“¡äº¤æ˜“ç·¨è™Ÿè¦å¡«å…¥
 		obj.setMerchantTradeNo("XX");
 		String result = all.queryCreditCardPeriodInfo(obj);
 		return result;
@@ -106,13 +106,13 @@ public class SampleCode {
 	
 	public String sampleCapture(){
 		initial();
-		//·|­û¥Ó½Ğ¼·´Ú/°h´Ú½d¨Ò
+		//æœƒå“¡ç”³è«‹æ’¥æ¬¾/é€€æ¬¾ç¯„ä¾‹
 		CaptureObj obj = new CaptureObj();
 		obj.setMerchantTradeNo("XX");
-		//¼·°h´Úª÷ÃB­n¤p¤ß«OÅ@
+		//æ’¥é€€æ¬¾é‡‘é¡è¦å°å¿ƒä¿è­·
 		obj.setCaptureAMT("XX");
 		obj.setUserRefundAMT("XX");
-		//½Õ¾ã¥­¥x°Ó¤âÄò¶OªºÅv­­»İ­n³Q«OÅ@
+		//èª¿æ•´å¹³å°å•†æ‰‹çºŒè²»çš„æ¬Šé™éœ€è¦è¢«ä¿è­·
 		obj.setUpdatePlatformChargeFee("XX");
 		obj.setPlatformChargeFee("XX");
 		obj.setRemark("XX");
@@ -121,12 +121,12 @@ public class SampleCode {
 	}
 	
 	public String sampleDoAction(){
-		//«H¥Î¥dÃö±b¡B°h¨ê¡B¨ú®ø¡B©ñ±ó¡B µLªk¦bStageÀô¹Ò¼ÒÀÀ
+		//ä¿¡ç”¨å¡é—œå¸³ã€é€€åˆ·ã€å–æ¶ˆã€æ”¾æ£„ã€ ç„¡æ³•åœ¨Stageç’°å¢ƒæ¨¡æ“¬
 		initial();
 		DoActionObj obj = new DoActionObj();
 		obj.setMerchantTradeNo("XX");
 		obj.setTradeNo("XX");
-		//°õ¦æ°Ê§@»İ­n¦³Åv­­±±ºŞ
+		//åŸ·è¡Œå‹•ä½œéœ€è¦æœ‰æ¬Šé™æ§ç®¡
 		obj.setAction("XX");
 		obj.setTotalAmount("XX");
 		String result = all.doAction(obj);
@@ -134,7 +134,7 @@ public class SampleCode {
 	}
 	
 	public String sampleChargeback(){
-		//·|­û³qª¾°h´Ú »İ­n³]©wÅv­­¦¹¥\¯à¤è«K°Ó®aºŞ²z
+		//æœƒå“¡é€šçŸ¥é€€æ¬¾ éœ€è¦è¨­å®šæ¬Šé™æ­¤åŠŸèƒ½æ–¹ä¾¿å•†å®¶ç®¡ç†
 		initial();
 		AioChargebackObj obj = new AioChargebackObj();
 		obj.setMerchantTradeNo("XX");

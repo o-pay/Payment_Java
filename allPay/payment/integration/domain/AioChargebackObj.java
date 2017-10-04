@@ -1,7 +1,7 @@
 package allPay.payment.integration.domain;
 
 /**
- * ·|­û³qª¾°h´Úª«¥ó
+ * æœƒå“¡é€šçŸ¥é€€æ¬¾ç‰©ä»¶
  * @author mark.chiu
  *
  */
@@ -9,121 +9,121 @@ public class AioChargebackObj {
 	
 	/**
 	 * MerchantID
-	 * ·|­û½s¸¹(¥ÑallPay´£¨Ñ)
+	 * æœƒå“¡ç·¨è™Ÿ(ç”±allPayæä¾›)
 	 */
 	private String MerchantID = "";
 	
 	/**
 	 * MerchantTradeNo
-	 * ·|­û¥æ©ö½s¸¹
+	 * æœƒå“¡äº¤æ˜“ç·¨è™Ÿ
 	 */
 	private String MerchantTradeNo = "";
 	
 	/**
 	 * TradeNo
-	 * allPayªº¥æ©ö½s¸¹
+	 * allPayçš„äº¤æ˜“ç·¨è™Ÿ
 	 */
 	private String TradeNo = "";
 	
 	/**
 	 * ChargeBackTotalAmount
-	 * °h´Úª÷ÃB
+	 * é€€æ¬¾é‡‘é¡
 	 */
 	private String ChargeBackTotalAmount = "";
 	
 	/**
 	 * Remark
-	 * ³ÆµùÄæ¦ì
+	 * å‚™è¨»æ¬„ä½
 	 */
 	private String Remark = "";
 	
 	/**
 	 * PlatformID
-	 * ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹(¥ÑallPay´£¨Ñ)
+	 * ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ(ç”±allPayæä¾›)
 	 */
 	private String PlatformID = "";
 	
 	/********************* getters and setters *********************/
 	
 	/**
-	 * ¨ú±oMerchantID ·|­û½s¸¹(¥ÑO'Pay´£¨Ñ)
+	 * å–å¾—MerchantID æœƒå“¡ç·¨è™Ÿ(ç”±O'Payæä¾›)
 	 * @return MerchantID
 	 */
 	public String getMerchantID() {
 		return MerchantID;
 	}
 	/**
-	 * ³]©wMerchantID ·|­û½s¸¹(¥ÑO'Pay´£¨Ñ)
+	 * è¨­å®šMerchantID æœƒå“¡ç·¨è™Ÿ(ç”±O'Payæä¾›)
 	 * @param merchantID
 	 */
 	public void setMerchantID(String merchantID) {
 		MerchantID = merchantID;
 	}
 	/**
-	 * ¨ú±oMerchantTradeNo ·|­û¥æ©ö½s¸¹¡A­q³æ¦¨¥ß®Éªº·|­û¥æ©ö½s¸¹¡C
+	 * å–å¾—MerchantTradeNo æœƒå“¡äº¤æ˜“ç·¨è™Ÿï¼Œè¨‚å–®æˆç«‹æ™‚çš„æœƒå“¡äº¤æ˜“ç·¨è™Ÿã€‚
 	 * @return MerchantTradeNo
 	 */
 	public String getMerchantTradeNo() {
 		return MerchantTradeNo;
 	}
 	/**
-	 * ³]©wMerchantTradeNo ·|­û¥æ©ö½s¸¹¡A­q³æ¦¨¥ß®Éªº·|­û¥æ©ö½s¸¹¡C
+	 * è¨­å®šMerchantTradeNo æœƒå“¡äº¤æ˜“ç·¨è™Ÿï¼Œè¨‚å–®æˆç«‹æ™‚çš„æœƒå“¡äº¤æ˜“ç·¨è™Ÿã€‚
 	 * @param merchantTradeNo
 	 */
 	public void setMerchantTradeNo(String merchantTradeNo) {
 		MerchantTradeNo = merchantTradeNo;
 	}
 	/**
-	 * ¨ú±oTradeNo O'Payªº¥æ©ö½s¸¹¡A¼Ú¥IÄ_¦b¥I´Ú¦¨¥\®É¡A¦^¶ÇªºO¡¦Pay¥æ©ö½s¸¹¡C
+	 * å–å¾—TradeNo O'Payçš„äº¤æ˜“ç·¨è™Ÿï¼Œæ­ä»˜å¯¶åœ¨ä»˜æ¬¾æˆåŠŸæ™‚ï¼Œå›å‚³çš„Oâ€™Payäº¤æ˜“ç·¨è™Ÿã€‚
 	 * @return TradeNo
 	 */
 	public String getTradeNo() {
 		return TradeNo;
 	}
 	/**
-	 * ³]©wTradeNo O'Payªº¥æ©ö½s¸¹¡A¼Ú¥IÄ_¦b¥I´Ú¦¨¥\®É¡A¦^¶ÇªºO¡¦Pay¥æ©ö½s¸¹¡C
+	 * è¨­å®šTradeNo O'Payçš„äº¤æ˜“ç·¨è™Ÿï¼Œæ­ä»˜å¯¶åœ¨ä»˜æ¬¾æˆåŠŸæ™‚ï¼Œå›å‚³çš„Oâ€™Payäº¤æ˜“ç·¨è™Ÿã€‚
 	 * @param tradeNo
 	 */
 	public void setTradeNo(String tradeNo) {
 		TradeNo = tradeNo;
 	}
 	/**
-	 * ¨ú±oChargeBackTotalAmount °h´Úª÷ÃB
+	 * å–å¾—ChargeBackTotalAmount é€€æ¬¾é‡‘é¡
 	 * @return ChargeBackTotalAmount
 	 */
 	public String getChargeBackTotalAmount() {
 		return ChargeBackTotalAmount;
 	}
 	/**
-	 * ³]©wChargeBackTotalAmount °h´Úª÷ÃB
+	 * è¨­å®šChargeBackTotalAmount é€€æ¬¾é‡‘é¡
 	 * @param chargeBackTotalAmount
 	 */
 	public void setChargeBackTotalAmount(String chargeBackTotalAmount) {
 		ChargeBackTotalAmount = chargeBackTotalAmount;
 	}
 	/**
-	 * ¨ú±oRemark ³ÆµùÄæ¦ì
+	 * å–å¾—Remark å‚™è¨»æ¬„ä½
 	 * @return Remark
 	 */
 	public String getRemark() {
 		return Remark;
 	}
 	/**
-	 * ³]©wRemark ³ÆµùÄæ¦ì
+	 * è¨­å®šRemark å‚™è¨»æ¬„ä½
 	 * @param remark
 	 */
 	public void setRemark(String remark) {
 		Remark = remark;
 	}
 	/**
-	 * ¨ú±oPlatformID ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹(¥ÑallPay´£¨Ñ)
+	 * å–å¾—PlatformID ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ(ç”±allPayæä¾›)
 	 * @return PlatformID
 	 */
 	public String getPlatformID() {
 		return PlatformID;
 	}
 	/**
-	 * ³]©wPlatformID ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹(¥ÑallPay´£¨Ñ)
+	 * è¨­å®šPlatformID ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ(ç”±allPayæä¾›)
 	 * @param platformID
 	 */
 	public void setPlatformID(String platformID) {

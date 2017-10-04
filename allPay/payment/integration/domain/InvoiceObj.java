@@ -1,7 +1,7 @@
 package allPay.payment.integration.domain;
 
 /**
- * ¶}¥ßµo²¼ª«¥ó
+ * é–‹ç«‹ç™¼ç¥¨ç‰©ä»¶
  * @author mark.chiu
  *
  */
@@ -9,441 +9,441 @@ public class InvoiceObj {
 	
 	/**
 	 * RelateNumber
-	 * ¦X§@¯S©±¦Û­q½s¸¹
+	 * åˆä½œç‰¹åº—è‡ªè¨‚ç·¨è™Ÿ
 	 */
 	private String RelateNumber = "";
 	
 	/**
 	 * CustomerID
-	 * «È¤á¥N¸¹
+	 * å®¢æˆ¶ä»£è™Ÿ
 	 */
 	private String CustomerID = "";
 	
 	/**
 	 * CustomerIdentifier
-	 * ²Î¤@½s¸¹
+	 * çµ±ä¸€ç·¨è™Ÿ
 	 */
 	private String CustomerIdentifier = "";
 	
 	/**
 	 * CustomerName
-	 * «È¤á¦WºÙ
+	 * å®¢æˆ¶åç¨±
 	 */
 	private String CustomerName = "";
 	
 	/**
 	 * CustomerAddr
-	 * «È¤á¦a§}
+	 * å®¢æˆ¶åœ°å€
 	 */
 	private String CustomerAddr = "";
 	
 	/**
 	 * CustomerPhone
-	 * «È¤á¤â¾÷¸¹½X
+	 * å®¢æˆ¶æ‰‹æ©Ÿè™Ÿç¢¼
 	 */
 	private String CustomerPhone = "";
 	
 	/**
 	 * CustomerEmail
-	 * «È¤á¹q¤l«H½c
+	 * å®¢æˆ¶é›»å­ä¿¡ç®±
 	 */
 	private String CustomerEmail = "";
 	
 	/**
 	 * ClearanceMark
-	 * ³qÃö¤è¦¡
+	 * é€šé—œæ–¹å¼
 	 */
 	private String ClearanceMark = "";
 	
 	/**
 	 * TaxType
-	 * ½Òµ|Ãş§O
+	 * èª²ç¨…é¡åˆ¥
 	 */
 	private String TaxType = "";
 	
 	/**
 	 * CarruerType
-	 * ¸ü¨ãÃş§O
+	 * è¼‰å…·é¡åˆ¥
 	 */
 	private String CarruerType = "";
 	
 	/**
 	 * CarruerNum
-	 * ¸ü¨ã½s¸¹
+	 * è¼‰å…·ç·¨è™Ÿ
 	 */
 	private String CarruerNum = "";
 	
 	/**
 	 * Donation
-	 * ®½ÃØµù°O
+	 * æè´ˆè¨»è¨˜
 	 */
 	private String Donation = "";
 	
 	/**
 	 * LoveCode
-	 * ·R¤ß½X
+	 * æ„›å¿ƒç¢¼
 	 */
 	private String LoveCode = "";
 	
 	/**
 	 * Print
-	 * ¦C¦Lµù°O
+	 * åˆ—å°è¨»è¨˜
 	 */
 	private String Print = "";
 	
 	/**
 	 * InvoiceItemName
-	 * °Ó«~¦WºÙ
+	 * å•†å“åç¨±
 	 */
 	private String InvoiceItemName = "";
 	
 	/**
 	 * InvoiceItemCount
-	 * °Ó«~¼Æ¶q
+	 * å•†å“æ•¸é‡
 	 */
 	private String InvoiceItemCount = "";
 	
 	/**
 	 * InvoiceItemWord
-	 * °Ó«~³æ¦ì
+	 * å•†å“å–®ä½
 	 */
 	private String InvoiceItemWord = "";
 	
 	/**
 	 * InvoiceItemPrice
-	 * °Ó«~»ù®æ
+	 * å•†å“åƒ¹æ ¼
 	 */
 	private String InvoiceItemPrice = "";
 	
 	/**
 	 * InvoiceItemTaxType
-	 * °Ó«~½Òµ|§O
+	 * å•†å“èª²ç¨…åˆ¥
 	 */
 	private String InvoiceItemTaxType = "";
 	
 	/**
 	 * InvoiceRemark
-	 * ³Æµù
+	 * å‚™è¨»
 	 */
 	private String InvoiceRemark = "";
 	
 	/**
 	 * DelayDay
-	 * ©µ¿ğ¤Ñ¼Æ
+	 * å»¶é²å¤©æ•¸
 	 */
 	private String DelayDay = "";
 	
 	/**
 	 * InvType
-	 * ¦r­yÃş§O
+	 * å­—è»Œé¡åˆ¥
 	 */
 	private String InvType = "";
 	
 	/********************* getters and setters *********************/
 	
 	/**
-	 * ¨ú±oRelateNumber ¦X§@¯S©±¦Û­q½s¸¹
+	 * å–å¾—RelateNumber åˆä½œç‰¹åº—è‡ªè¨‚ç·¨è™Ÿ
 	 * @return RelateNumber
 	 */
 	public String getRelateNumber() {
 		return RelateNumber;
 	}
 	/**
-	 * ³]©wRelateNumber ¦X§@¯S©±¦Û­q½s¸¹
+	 * è¨­å®šRelateNumber åˆä½œç‰¹åº—è‡ªè¨‚ç·¨è™Ÿ
 	 * @param relateNumber
 	 */
 	public void setRelateNumber(String relateNumber) {
 		RelateNumber = relateNumber;
 	}
 	/**
-	 * ¨ú±oCustomerID «È¤á¥N¸¹
+	 * å–å¾—CustomerID å®¢æˆ¶ä»£è™Ÿ
 	 * @return CustomerID
 	 */
 	public String getCustomerID() {
 		return CustomerID;
 	}
 	/**
-	 * ³]©wCustomerID «È¤á¥N¸¹
+	 * è¨­å®šCustomerID å®¢æˆ¶ä»£è™Ÿ
 	 * @param customerID
 	 */
 	public void setCustomerID(String customerID) {
 		CustomerID = customerID;
 	}
 	/**
-	 * ¨ú±oCustomerIdentifier ²Î¤@½s¸¹
+	 * å–å¾—CustomerIdentifier çµ±ä¸€ç·¨è™Ÿ
 	 * @return CustomerIdentifier
 	 */
 	public String getCustomerIdentifier() {
 		return CustomerIdentifier;
 	}
 	/**
-	 * ³]©wCustomerIdentifier ²Î¤@½s¸¹
+	 * è¨­å®šCustomerIdentifier çµ±ä¸€ç·¨è™Ÿ
 	 * @param customerIdentifier
 	 */
 	public void setCustomerIdentifier(String customerIdentifier) {
 		CustomerIdentifier = customerIdentifier;
 	}
 	/**
-	 * ¨ú±oCustomerName «È¤á¦WºÙ
+	 * å–å¾—CustomerName å®¢æˆ¶åç¨±
 	 * @return CustomerName
 	 */
 	public String getCustomerName() {
 		return CustomerName;
 	}
 	/**
-	 * ³]©wCustomerName «È¤á¦WºÙ
+	 * è¨­å®šCustomerName å®¢æˆ¶åç¨±
 	 * @param customerName
 	 */
 	public void setCustomerName(String customerName) {
 		CustomerName = customerName;
 	}
 	/**
-	 * ¨ú±oCustomerAddr «È¤á¦a§}
+	 * å–å¾—CustomerAddr å®¢æˆ¶åœ°å€
 	 * @return CustomerAddr
 	 */
 	public String getCustomerAddr() {
 		return CustomerAddr;
 	}
 	/**
-	 * ³]©wCustomerAddr «È¤á¦a§}
+	 * è¨­å®šCustomerAddr å®¢æˆ¶åœ°å€
 	 * @param customerAddr
 	 */
 	public void setCustomerAddr(String customerAddr) {
 		CustomerAddr = customerAddr;
 	}
 	/**
-	 * ¨ú±oCustomerPhone «È¤á¤â¾÷¸¹½X
+	 * å–å¾—CustomerPhone å®¢æˆ¶æ‰‹æ©Ÿè™Ÿç¢¼
 	 * @return CustomerPhone
 	 */
 	public String getCustomerPhone() {
 		return CustomerPhone;
 	}
 	/**
-	 * ³]©wCustomerPhone «È¤á¤â¾÷¸¹½X
+	 * è¨­å®šCustomerPhone å®¢æˆ¶æ‰‹æ©Ÿè™Ÿç¢¼
 	 * @param customerPhone
 	 */
 	public void setCustomerPhone(String customerPhone) {
 		CustomerPhone = customerPhone;
 	}
 	/**
-	 * ¨ú±oCustomerEmail «È¤á¹q¤l«H½c
+	 * å–å¾—CustomerEmail å®¢æˆ¶é›»å­ä¿¡ç®±
 	 * @return CustomerEmail
 	 */
 	public String getCustomerEmail() {
 		return CustomerEmail;
 	}
 	/**
-	 * ³]©wCustomerEmail «È¤á¹q¤l«H½c
+	 * è¨­å®šCustomerEmail å®¢æˆ¶é›»å­ä¿¡ç®±
 	 * @param customerEmail
 	 */
 	public void setCustomerEmail(String customerEmail) {
 		CustomerEmail = customerEmail;
 	}
 	/**
-	 * ¨ú±oClearanceMark ³qÃö¤è¦¡
+	 * å–å¾—ClearanceMark é€šé—œæ–¹å¼
 	 * @return ClearanceMark
 	 */
 	public String getClearanceMark() {
 		return ClearanceMark;
 	}
 	/**
-	 * ³]©wClearanceMark ³qÃö¤è¦¡
+	 * è¨­å®šClearanceMark é€šé—œæ–¹å¼
 	 * @param clearanceMark
 	 */
 	public void setClearanceMark(String clearanceMark) {
 		ClearanceMark = clearanceMark;
 	}
 	/**
-	 * ¨ú±oTaxType ½Òµ|Ãş§O
+	 * å–å¾—TaxType èª²ç¨…é¡åˆ¥
 	 * @return TaxType
 	 */
 	public String getTaxType() {
 		return TaxType;
 	}
 	/**
-	 * ³]©wTaxType ½Òµ|Ãş§O
+	 * è¨­å®šTaxType èª²ç¨…é¡åˆ¥
 	 * @param taxType
 	 */
 	public void setTaxType(String taxType) {
 		TaxType = taxType;
 	}
 	/**
-	 * ¨ú±oCarruerType ¸ü¨ãÃş§O
+	 * å–å¾—CarruerType è¼‰å…·é¡åˆ¥
 	 * @return CarruerType
 	 */
 	public String getCarruerType() {
 		return CarruerType;
 	}
 	/**
-	 * ³]©wCarruerType ¸ü¨ãÃş§O
+	 * è¨­å®šCarruerType è¼‰å…·é¡åˆ¥
 	 * @param carruerType
 	 */
 	public void setCarruerType(String carruerType) {
 		CarruerType = carruerType;
 	}
 	/**
-	 * ¨ú±oCarruerNum ¸ü¨ã½s¸¹
+	 * å–å¾—CarruerNum è¼‰å…·ç·¨è™Ÿ
 	 * @return CarruerNum
 	 */
 	public String getCarruerNum() {
 		return CarruerNum;
 	}
 	/**
-	 * ³]©wCarruerNum ¸ü¨ã½s¸¹
+	 * è¨­å®šCarruerNum è¼‰å…·ç·¨è™Ÿ
 	 * @param carruerNum
 	 */
 	public void setCarruerNum(String carruerNum) {
 		CarruerNum = carruerNum;
 	}
 	/**
-	 * ¨ú±oDonation ®½ÃØµù°O
+	 * å–å¾—Donation æè´ˆè¨»è¨˜
 	 * @return Donation
 	 */
 	public String getDonation() {
 		return Donation;
 	}
 	/**
-	 * ³]©wDonation ®½ÃØµù°O
+	 * è¨­å®šDonation æè´ˆè¨»è¨˜
 	 * @param donation
 	 */
 	public void setDonation(String donation) {
 		Donation = donation;
 	}
 	/**
-	 * ¨ú±oLoveCode ·R¤ß½X
+	 * å–å¾—LoveCode æ„›å¿ƒç¢¼
 	 * @return LoveCode
 	 */
 	public String getLoveCode() {
 		return LoveCode;
 	}
 	/**
-	 * ³]©wLoveCode ·R¤ß½X
+	 * è¨­å®šLoveCode æ„›å¿ƒç¢¼
 	 * @param loveCode
 	 */
 	public void setLoveCode(String loveCode) {
 		LoveCode = loveCode;
 	}
 	/**
-	 * ¨ú±oPrint ¦C¦Lµù°O
+	 * å–å¾—Print åˆ—å°è¨»è¨˜
 	 * @return Print
 	 */
 	public String getPrint() {
 		return Print;
 	}
 	/**
-	 * ³]©wPrint ¦C¦Lµù°O
+	 * è¨­å®šPrint åˆ—å°è¨»è¨˜
 	 * @param print
 	 */
 	public void setPrint(String print) {
 		Print = print;
 	}
 	/**
-	 * ¨ú±oInvoiceItemName °Ó«~¦WºÙ
+	 * å–å¾—InvoiceItemName å•†å“åç¨±
 	 * @return InvoiceItemName
 	 */
 	public String getInvoiceItemName() {
 		return InvoiceItemName;
 	}
 	/**
-	 * ³]©wInvoiceItemName °Ó«~¦WºÙ
+	 * è¨­å®šInvoiceItemName å•†å“åç¨±
 	 * @param invoiceItemName
 	 */
 	public void setInvoiceItemName(String invoiceItemName) {
 		InvoiceItemName = invoiceItemName;
 	}
 	/**
-	 * ¨ú±oInvoiceItemCount °Ó«~¼Æ¶q
+	 * å–å¾—InvoiceItemCount å•†å“æ•¸é‡
 	 * @return InvoiceItemCount
 	 */
 	public String getInvoiceItemCount() {
 		return InvoiceItemCount;
 	}
 	/**
-	 * ³]©wInvoiceItemCount °Ó«~¼Æ¶q
+	 * è¨­å®šInvoiceItemCount å•†å“æ•¸é‡
 	 * @param invoiceItemCount
 	 */
 	public void setInvoiceItemCount(String invoiceItemCount) {
 		InvoiceItemCount = invoiceItemCount;
 	}
 	/**
-	 * ¨ú±oInvoiceItemWord °Ó«~³æ¦ì
+	 * å–å¾—InvoiceItemWord å•†å“å–®ä½
 	 * @return InvoiceItemWord
 	 */
 	public String getInvoiceItemWord() {
 		return InvoiceItemWord;
 	}
 	/**
-	 * ³]©wInvoiceItemWord °Ó«~³æ¦ì
+	 * è¨­å®šInvoiceItemWord å•†å“å–®ä½
 	 * @param invoiceItemWord
 	 */
 	public void setInvoiceItemWord(String invoiceItemWord) {
 		InvoiceItemWord = invoiceItemWord;
 	}
 	/**
-	 * ¨ú±oInvoiceItemPrice °Ó«~»ù®æ
+	 * å–å¾—InvoiceItemPrice å•†å“åƒ¹æ ¼
 	 * @return InvoiceItemPrice
 	 */
 	public String getInvoiceItemPrice() {
 		return InvoiceItemPrice;
 	}
 	/**
-	 * ³]©wInvoiceItemPrice °Ó«~»ù®æ
+	 * è¨­å®šInvoiceItemPrice å•†å“åƒ¹æ ¼
 	 * @param invoiceItemPrice
 	 */
 	public void setInvoiceItemPrice(String invoiceItemPrice) {
 		InvoiceItemPrice = invoiceItemPrice;
 	}
 	/**
-	 * ¨ú±oInvoiceItemTaxType °Ó«~½Òµ|§O
+	 * å–å¾—InvoiceItemTaxType å•†å“èª²ç¨…åˆ¥
 	 * @return InvoiceItemTaxType
 	 */
 	public String getInvoiceItemTaxType() {
 		return InvoiceItemTaxType;
 	}
 	/**
-	 * ³]©wInvoiceItemTaxType °Ó«~½Òµ|§O
+	 * è¨­å®šInvoiceItemTaxType å•†å“èª²ç¨…åˆ¥
 	 * @param invoiceItemTaxType
 	 */
 	public void setInvoiceItemTaxType(String invoiceItemTaxType) {
 		InvoiceItemTaxType = invoiceItemTaxType;
 	}
 	/**
-	 * ¨ú±oInvoiceRemark ³Æµù
+	 * å–å¾—InvoiceRemark å‚™è¨»
 	 * @return InvoiceRemark
 	 */
 	public String getInvoiceRemark() {
 		return InvoiceRemark;
 	}
 	/**
-	 * ³]©wInvoiceRemark ³Æµù
+	 * è¨­å®šInvoiceRemark å‚™è¨»
 	 * @param invoiceRemark
 	 */
 	public void setInvoiceRemark(String invoiceRemark) {
 		InvoiceRemark = invoiceRemark;
 	}
 	/**
-	 * ¨ú±oDelayDay ©µ¿ğ¤Ñ¼Æ
+	 * å–å¾—DelayDay å»¶é²å¤©æ•¸
 	 * @return DelayDay
 	 */
 	public String getDelayDay() {
 		return DelayDay;
 	}
 	/**
-	 * ³]©wDelayDay ©µ¿ğ¤Ñ¼Æ
+	 * è¨­å®šDelayDay å»¶é²å¤©æ•¸
 	 * @param delayDay
 	 */
 	public void setDelayDay(String delayDay) {
 		DelayDay = delayDay;
 	}
 	/**
-	 * ¨ú±oInvType ¦r­yÃş§O
+	 * å–å¾—InvType å­—è»Œé¡åˆ¥
 	 * @return InvType
 	 */
 	public String getInvType() {
 		return InvType;
 	}
 	/**
-	 * ³]©wInvType ¦r­yÃş§O
+	 * è¨­å®šInvType å­—è»Œé¡åˆ¥
 	 * @param invType
 	 */
 	public void setInvType(String invType) {

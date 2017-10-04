@@ -1,7 +1,7 @@
 package allPay.payment.integration.domain;
 
 /**
- * ¤U¸ü«H¥Î¥d¼·´Ú¹ï±b¸ê®ÆÀÉª«¥ó
+ * ä¸‹è¼‰ä¿¡ç”¨å¡æ’¥æ¬¾å°å¸³è³‡æ–™æª”ç‰©ä»¶
  * @author mark.chiu
  *
  */
@@ -9,87 +9,87 @@ public class FundingReconDetailObj {
 	
 	/**
 	 * MerchantID
-	 * ·|­û½s¸¹(¥ÑallPay´£¨Ñ)
+	 * æœƒå“¡ç·¨è™Ÿ(ç”±allPayæä¾›)
 	 */
 	private String MerchantID = "";
 	
 	/**
 	 * PayDateType
-	 * ¬d¸ß¤é´ÁÃş§O
+	 * æŸ¥è©¢æ—¥æœŸé¡åˆ¥
 	 */
 	private String PayDateType = "";
 	
 	/**
 	 * StartDate
-	 * ¬d¸ß¶}©l¤é´Á
+	 * æŸ¥è©¢é–‹å§‹æ—¥æœŸ
 	 */
 	private String StartDate = "";
 	
 	/**
 	 * EndDate
-	 * ¬d¸ßµ²§ô¤é´Á
+	 * æŸ¥è©¢çµæŸæ—¥æœŸ
 	 */
 	private String EndDate = "";
 	
 	/********************* getters and setters *********************/
 	
 	/**
-	 * ¨ú±oMerchantID ·|­û½s¸¹(¥ÑO¡¦Pay´£¨Ñ)
+	 * å–å¾—MerchantID æœƒå“¡ç·¨è™Ÿ(ç”±Oâ€™Payæä¾›)
 	 * @return MerchantID
 	 */
 	public String getMerchantID() {
 		return MerchantID;
 	}
 	/**
-	 * ³]©wMerchantID ·|­û½s¸¹(¥ÑO¡¦Pay´£¨Ñ)
+	 * è¨­å®šMerchantID æœƒå“¡ç·¨è™Ÿ(ç”±Oâ€™Payæä¾›)
 	 * @param merchantID
 	 */
 	public void setMerchantID(String merchantID) {
 		MerchantID = merchantID;
 	}
 	/**
-	 * ¨ú±oPayDateType ¬d¸ß¤é´ÁÃş§O¡A­n¬d¸ßªº¤é´ÁÃş§O
-	 * ­Y¬°¬d¸ß¼·´Ú¤é´Á®É¡A«h°Ñ¼Æ½Ğ±afund
-	 * ­Y¬°¬d¸ßÃö±b¤é´Á®É¡A«h°Ñ¼Æ½Ğ±aclose
-	 * ­Y¬°¬d¸ß¤J±b¤é´Á®É¡A«h°Ñ¼Æ½Ğ±aenter
+	 * å–å¾—PayDateType æŸ¥è©¢æ—¥æœŸé¡åˆ¥ï¼Œè¦æŸ¥è©¢çš„æ—¥æœŸé¡åˆ¥
+	 * è‹¥ç‚ºæŸ¥è©¢æ’¥æ¬¾æ—¥æœŸæ™‚ï¼Œå‰‡åƒæ•¸è«‹å¸¶fund
+	 * è‹¥ç‚ºæŸ¥è©¢é—œå¸³æ—¥æœŸæ™‚ï¼Œå‰‡åƒæ•¸è«‹å¸¶close
+	 * è‹¥ç‚ºæŸ¥è©¢å…¥å¸³æ—¥æœŸæ™‚ï¼Œå‰‡åƒæ•¸è«‹å¸¶enter
 	 * @return PayDateType
 	 */
 	public String getPayDateType() {
 		return PayDateType;
 	}
 	/**
-	 * ³]©wPayDateType ¬d¸ß¤é´ÁÃş§O¡A­n¬d¸ßªº¤é´ÁÃş§O
-	 * ­Y¬°¬d¸ß¼·´Ú¤é´Á®É¡A«h°Ñ¼Æ½Ğ±afund
-	 * ­Y¬°¬d¸ßÃö±b¤é´Á®É¡A«h°Ñ¼Æ½Ğ±aclose
-	 * ­Y¬°¬d¸ß¤J±b¤é´Á®É¡A«h°Ñ¼Æ½Ğ±aenter
+	 * è¨­å®šPayDateType æŸ¥è©¢æ—¥æœŸé¡åˆ¥ï¼Œè¦æŸ¥è©¢çš„æ—¥æœŸé¡åˆ¥
+	 * è‹¥ç‚ºæŸ¥è©¢æ’¥æ¬¾æ—¥æœŸæ™‚ï¼Œå‰‡åƒæ•¸è«‹å¸¶fund
+	 * è‹¥ç‚ºæŸ¥è©¢é—œå¸³æ—¥æœŸæ™‚ï¼Œå‰‡åƒæ•¸è«‹å¸¶close
+	 * è‹¥ç‚ºæŸ¥è©¢å…¥å¸³æ—¥æœŸæ™‚ï¼Œå‰‡åƒæ•¸è«‹å¸¶enter
 	 * @param payDateType
 	 */
 	public void setPayDateType(String payDateType) {
 		PayDateType = payDateType;
 	}
 	/**
-	 * ¨ú±oStartDate ¬d¸ß¶}©l¤é´Á¡A¤é´Á®æ¦¡¬°¡uyyyy-MM-dd¡v
+	 * å–å¾—StartDate æŸ¥è©¢é–‹å§‹æ—¥æœŸï¼Œæ—¥æœŸæ ¼å¼ç‚ºã€Œyyyy-MM-ddã€
 	 * @return StartDate
 	 */
 	public String getStartDate() {
 		return StartDate;
 	}
 	/**
-	 * ³]©wStartDate ¬d¸ß¶}©l¤é´Á¡A¤é´Á®æ¦¡¬°¡uyyyy-MM-dd¡v
+	 * è¨­å®šStartDate æŸ¥è©¢é–‹å§‹æ—¥æœŸï¼Œæ—¥æœŸæ ¼å¼ç‚ºã€Œyyyy-MM-ddã€
 	 * @param startDate
 	 */
 	public void setStartDate(String startDate) {
 		StartDate = startDate;
 	}
 	/**
-	 * ¨ú±oEndDate ¬d¸ßµ²§ô¤é´Á¡A¤é´Á®æ¦¡¬°¡uyyyy-MM-dd¡v
+	 * å–å¾—EndDate æŸ¥è©¢çµæŸæ—¥æœŸï¼Œæ—¥æœŸæ ¼å¼ç‚ºã€Œyyyy-MM-ddã€
 	 * @return EndDate
 	 */
 	public String getEndDate() {
 		return EndDate;
 	}
 	/**
-	 * ³]©wEndDate ¬d¸ßµ²§ô¤é´Á¡A¤é´Á®æ¦¡¬°¡uyyyy-MM-dd¡v
+	 * è¨­å®šEndDate æŸ¥è©¢çµæŸæ—¥æœŸï¼Œæ—¥æœŸæ ¼å¼ç‚ºã€Œyyyy-MM-ddã€
 	 * @param endDate
 	 */
 	public void setEndDate(String endDate) {

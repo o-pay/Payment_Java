@@ -1,33 +1,33 @@
 package allPay.payment.integration.errorMsg;
 
 public class ErrorMessage {
-	public final static String CHECK_MAC_VALUE_NOT_EQUALL_ERROR = "ÀË¬d½XÅçÃÒ¿ù»~!";
+	public final static String CHECK_MAC_VALUE_NOT_EQUALL_ERROR = "æª¢æŸ¥ç¢¼é©—è­‰éŒ¯èª¤!";
 	
-	public final static String NO_SUCH_METHOD_EXCEPTION = "§ä¤£¨ì¦¹¤èªk¥i©I¥s!";
+	public final static String NO_SUCH_METHOD_EXCEPTION = "æ‰¾ä¸åˆ°æ­¤æ–¹æ³•å¯å‘¼å«!";
 	
-	public final static String MInfo_NOT_SETTING = "¥¼³]©w¬ÛÀ³°ò¥»¸ê®Æ¾É­PµLªk¨ú±oMerchantID, HashKey, HashIV!";
+	public final static String MInfo_NOT_SETTING = "æœªè¨­å®šç›¸æ‡‰åŸºæœ¬è³‡æ–™å°è‡´ç„¡æ³•å–å¾—MerchantID, HashKey, HashIV!";
 	
-	public final static String MInfo_UNDIFINED_TAG = "payment_conf³]©w¾×MInfo©ñ¤J¥¼©w¸qªº°Ñ¼Æ";
+	public final static String MInfo_UNDIFINED_TAG = "payment_confè¨­å®šæ“‹MInfoæ”¾å…¥æœªå®šç¾©çš„åƒæ•¸";
 	
-	public final static String OperatingMode_ERROR = "payment_conf³]©w¾×OperatingMode³]©w¿ù»~";
+	public final static String OperatingMode_ERROR = "payment_confè¨­å®šæ“‹OperatingModeè¨­å®šéŒ¯èª¤";
 	
-	public final static String COLUMN_RULE_ERROR = "¶ñ¤J«Dªk­È¡A½Ğ°Ñ¾\¤å¥ó³W½d";
+	public final static String COLUMN_RULE_ERROR = "å¡«å…¥éæ³•å€¼ï¼Œè«‹åƒé–±æ–‡ä»¶è¦ç¯„";
 	
-	public final static String CANNOT_BE_EMPTY = "¤£¯à¬°ªÅ";
+	public final static String CANNOT_BE_EMPTY = "ä¸èƒ½ç‚ºç©º";
 	
-	public final static String HASHTABLE_WITHOUT_CHKMACVALUE = "¦¹Hashtable¨Ã¨S¦³CheckMacValue¥i¤ñ¸û";
+	public final static String HASHTABLE_WITHOUT_CHKMACVALUE = "æ­¤Hashtableä¸¦æ²’æœ‰CheckMacValueå¯æ¯”è¼ƒ";
 	
-	public final static String JSON_FORMAT_ERROR = "JSON®æ¦¡¿ù»~¾É­P©ñ¤JJSONObject¿ù»~";
+	public final static String JSON_FORMAT_ERROR = "JSONæ ¼å¼éŒ¯èª¤å°è‡´æ”¾å…¥JSONObjectéŒ¯èª¤";
 	
-	public final static String GEN_CHECK_MAC_VALUE_FAIL = "²£¥ÍÀË¬d½X¥¢±Ñ";
+	public final static String GEN_CHECK_MAC_VALUE_FAIL = "ç”¢ç”Ÿæª¢æŸ¥ç¢¼å¤±æ•—";
 	
-	public final static String OBJ_MISSING_FIELD = "ª«¥ó¯Ê¤ÖÄİ©Ê";
+	public final static String OBJ_MISSING_FIELD = "ç‰©ä»¶ç¼ºå°‘å±¬æ€§";
 	
-	public final static String CONF_FILE_ERROR = "³]©wÀÉ®æ¦¡¿ù»~©Î¬O³]©w¾×©ñ¸m¸ô®|¿ù»~!";
+	public final static String CONF_FILE_ERROR = "è¨­å®šæª”æ ¼å¼éŒ¯èª¤æˆ–æ˜¯è¨­å®šæ“‹æ”¾ç½®è·¯å¾‘éŒ¯èª¤!";
 	
-	public final static String POST_ERROR = "POST¥¢±Ñ";
+	public final static String POST_ERROR = "POSTå¤±æ•—";
 	
-	public final static String UNDIFINED_OBJECT = "¶Ç¤J«D©w¸qªºª«¥ó¾É­P¿ù»~!";
+	public final static String UNDIFINED_OBJECT = "å‚³å…¥éå®šç¾©çš„ç‰©ä»¶å°è‡´éŒ¯èª¤!";
 	
-	public final static String CVS_TOTALAMT_ERROR = "ª÷ÃB¥²¶·¤¶©ó27¦Ü2000¤§¶¡";
+	public final static String CVS_TOTALAMT_ERROR = "é‡‘é¡å¿…é ˆä»‹æ–¼27è‡³2000ä¹‹é–“";
 }

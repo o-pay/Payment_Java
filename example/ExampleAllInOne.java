@@ -201,13 +201,13 @@ public class ExampleAllInOne {
 		invoice.setLoveCode("X123456");
 		invoice.setPrint("0");
 		invoice.setCustomerName("Mark");
-		invoice.setCustomerAddr("•x•_");
+		invoice.setCustomerAddr("Âè∞Âåó");
 		invoice.setCustomerPhone("0911429215");
 		invoice.setDelayDay("1");
 		invoice.setInvType("07");
-		invoice.setInvoiceItemName("πqµ¯");
+		invoice.setInvoiceItemName("ÈõªË¶ñ");
 		invoice.setInvoiceItemCount("1");
-		invoice.setInvoiceItemWord("•x");
+		invoice.setInvoiceItemWord("Âè∞");
 		invoice.setInvoiceItemPrice("50");
 		invoice.setInvoiceItemTaxType("1");
 		String form = all.aioCheckOut(obj, invoice);
