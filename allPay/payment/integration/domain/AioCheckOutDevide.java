@@ -155,7 +155,7 @@ public class AioCheckOutDevide {
 	 * InstallmentAmount
 	 * 使用刷卡分期的總付款金額
 	 */
-	private String InstallmentAmount = "";
+//	private String InstallmentAmount = "";
 	
 	/********************* getters and setters *********************/
 	
@@ -545,16 +545,16 @@ public class AioCheckOutDevide {
 	 * 取得InstallmentAmount 使用刷卡分期的總付款金額，刷卡分期的總付款金額。若與交易金額［TotalAmount］相同時，不需傳入此參數。
 	 * @return InstallmentAmount
 	 */
-	public String getInstallmentAmount() {
-		return InstallmentAmount;
-	}
+//	public String getInstallmentAmount() {
+//		return InstallmentAmount;
+//	}
 	/**
 	 * 設定InstallmentAmount 使用刷卡分期的總付款金額，刷卡分期的總付款金額。若與交易金額［TotalAmount］相同時，不需傳入此參數。
 	 * @param installmentAmount
 	 */
-	public void setInstallmentAmount(String installmentAmount) {
-		InstallmentAmount = installmentAmount;
-	}
+//	public void setInstallmentAmount(String installmentAmount) {
+//		InstallmentAmount = installmentAmount;
+//	}
 	/**
 	 * 取得StoreID 會員商店代碼，提供會員填入店家代碼使用
 	 * @return StoreID
@@ -579,7 +579,6 @@ public class AioCheckOutDevide {
 				+ ", OrderResultURL=" + OrderResultURL + ", NeedExtraPaidInfo=" + NeedExtraPaidInfo + ", DeviceSource="
 				+ DeviceSource + ", IgnorePayment=" + IgnorePayment + ", PlatformID=" + PlatformID + ", InvoiceMark="
 				+ InvoiceMark + ", HoldTradeAMT=" + HoldTradeAMT + ", EncryptType=" + EncryptType + ", UseRedeem="
-				+ UseRedeem + ", CreditInstallment=" + CreditInstallment + ", InstallmentAmount=" + InstallmentAmount
-				+ "]";
+				+ UseRedeem + ", CreditInstallment=" + CreditInstallment + "]";
 	}
 }

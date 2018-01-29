@@ -45,6 +45,8 @@
       </param>
       <param  type="Opt"  require="1" name="ChoosePayment"> 
         <option>ALL</option>
+        <option>AccountLink</option>
+        <option>WeiXinpay</option>
         <option>Credit</option>
         <condparam owner="Credit">
         <!--Reqirement checking of following credit card related sub parameter would be handled in 

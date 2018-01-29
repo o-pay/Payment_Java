@@ -215,7 +215,7 @@ public class AioCheckOutALL {
 	 * InstallmentAmount
 	 * 使用刷卡分期的總付款金額，刷卡分期的總付款金額。若與交易金額［TotalAmount］相同時，不需傳入此參數。
 	 */
-	private String InstallmentAmount = "";
+//	private String InstallmentAmount = "";
 	
 	/**
 	 * PeriodAmount
@@ -781,16 +781,16 @@ public class AioCheckOutALL {
 	 * 取得InstallmentAmount 使用刷卡分期的總付款金額，刷卡分期的總付款金額。若與交易金額［TotalAmount］相同時，不需傳入此參數。
 	 * @return InstallmentAmount
 	 */
-	public String getInstallmentAmount() {
-		return InstallmentAmount;
-	}
+//	public String getInstallmentAmount() {
+//		return InstallmentAmount;
+//	}
 	/**
 	 * 設定InstallmentAmount 使用刷卡分期的總付款金額，刷卡分期的總付款金額。若與交易金額［TotalAmount］相同時，不需傳入此參數。
 	 * @param installmentAmount
 	 */
-	public void setInstallmentAmount(String installmentAmount) {
-		InstallmentAmount = installmentAmount;
-	}
+//	public void setInstallmentAmount(String installmentAmount) {
+//		InstallmentAmount = installmentAmount;
+//	}
 	/**
 	 * 取得PeriodAmount 每次授權金額
 	 * 注意事項： 歐付寶會依此次授權金額[PeriodAmount]所設定的金額做為之後固定授權的金額。 
@@ -904,9 +904,8 @@ public class AioCheckOutALL {
 				+ UseRedeem + ", ExpireDate=" + ExpireDate + ", PaymentInfoURL=" + PaymentInfoURL
 				+ ", ClientRedirectURL=" + ClientRedirectURL + ", StoreExpireDate=" + StoreExpireDate + ", Desc_1="
 				+ Desc_1 + ", Desc_2=" + Desc_2 + ", Desc_3=" + Desc_3 + ", Desc_4=" + Desc_4 + ", ExpireTime="
-				+ ExpireTime + ", Redeem=" + Redeem + ", CreditInstallment=" + CreditInstallment
-				+ ", InstallmentAmount=" + InstallmentAmount + ", PeriodAmount=" + PeriodAmount + ", PeriodType="
-				+ PeriodType + ", Frequency=" + Frequency + ", ExecTimes=" + ExecTimes + ", PeriodReturnURL="
-				+ PeriodReturnURL + "]";
+				+ ExpireTime + ", Redeem=" + Redeem + ", CreditInstallment=" + CreditInstallment + ", PeriodAmount="
+				+ PeriodAmount + ", PeriodType=" + PeriodType + ", Frequency=" + Frequency + ", ExecTimes=" + ExecTimes
+				+ ", PeriodReturnURL=" + PeriodReturnURL + "]";
 	}
 }

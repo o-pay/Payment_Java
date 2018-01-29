@@ -89,7 +89,7 @@ public class AioCheckOutTopUpUsed {
 	 * ChooseSubPayment
 	 * 選擇預設付款子項目
 	 */
-	private String ChooseSubPayment = "";
+	private String ChooseSubPayment = "AllPay";
 	
 	/**
 	 * OrderResultURL
@@ -336,9 +336,9 @@ public class AioCheckOutTopUpUsed {
 	 *  此次交易僅會以台新銀行的 網路 ATM 付款。請參考付款方式一覽表
 	 * @param chooseSubPayment
 	 */
-	public void setChooseSubPayment(String chooseSubPayment) {
-		ChooseSubPayment = chooseSubPayment;
-	}
+//	public void setChooseSubPayment(String chooseSubPayment) {
+//		ChooseSubPayment = chooseSubPayment;
+//	}
 	/**
 	 * 取得OrderResultURL Client端回傳付款結果網址。付款完成後，歐付寶將頁面導回到會 員網址，並將付款結果帶回 
 	 * 注意事項：
