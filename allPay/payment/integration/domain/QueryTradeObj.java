@@ -1,7 +1,7 @@
 package allPay.payment.integration.domain;
 
 /**
- * ¬d¸ß«H¥Î¥d³æµ§©ú²Ó°O¿ı
+ * æŸ¥è©¢ä¿¡ç”¨å¡å–®ç­†æ˜ç´°è¨˜éŒ„
  * @author mark.chiu
  *
  */
@@ -9,81 +9,81 @@ public class QueryTradeObj {
 	
 	/**
 	 * MerchantID
-	 * ·|­û½s¸¹(¥ÑallPay´£¨Ñ)
+	 * æœƒå“¡ç·¨è™Ÿ(ç”±allPayæä¾›)
 	 */
 	private String MerchantID = "";
 	
 	/**
 	 * CreditRefundId
-	 * «H¥Î¥d±ÂÅv³æ¸¹
+	 * ä¿¡ç”¨å¡æˆæ¬Šå–®è™Ÿ
 	 */
 	private String CreditRefundId = "";
 	
 	/**
 	 * CreditAmount
-	 * ª÷ÃB
+	 * é‡‘é¡
 	 */
 	private String CreditAmount = "";
 	
 	/**
 	 * CreditCheckCode
-	 * °Ó®aÀË¬d½X¦b¼t°Ó«á¥x->«H¥Î¥d¦¬³æ->«H¥Î¥d±ÂÅv¸ê°T¤¤¥i¬d¨ì
+	 * å•†å®¶æª¢æŸ¥ç¢¼åœ¨å» å•†å¾Œå°->ä¿¡ç”¨å¡æ”¶å–®->ä¿¡ç”¨å¡æˆæ¬Šè³‡è¨Šä¸­å¯æŸ¥åˆ°
 	 */
 	private String CreditCheckCode = "";
 	
 	/********************* getters and setters *********************/
 	
 	/**
-	 * ¨ú±oMerchantID ·|­û½s¸¹(¥ÑO¡¦Pay´£¨Ñ)
+	 * å–å¾—MerchantID æœƒå“¡ç·¨è™Ÿ(ç”±Oâ€™Payæä¾›)
 	 * @return MerchantID
 	 */
 	public String getMerchantID() {
 		return MerchantID;
 	}
 	/**
-	 * ³]©wMerchantID ·|­û½s¸¹(¥ÑO¡¦Pay´£¨Ñ)
+	 * è¨­å®šMerchantID æœƒå“¡ç·¨è™Ÿ(ç”±Oâ€™Payæä¾›)
 	 * @param merchantID
 	 */
 	public void setMerchantID(String merchantID) {
 		MerchantID = merchantID;
 	}
 	/**
-	 * ¨ú±oCreditRefundId «H¥Î¥d±ÂÅv³æ¸¹
+	 * å–å¾—CreditRefundId ä¿¡ç”¨å¡æˆæ¬Šå–®è™Ÿ
 	 * @return CreditRefundId
 	 */
 	public String getCreditRefundId() {
 		return CreditRefundId;
 	}
 	/**
-	 * ³]©wCreditRefundId «H¥Î¥d±ÂÅv³æ¸¹
+	 * è¨­å®šCreditRefundId ä¿¡ç”¨å¡æˆæ¬Šå–®è™Ÿ
 	 * @param creditRefundId
 	 */
 	public void setCreditRefundId(String creditRefundId) {
 		CreditRefundId = creditRefundId;
 	}
 	/**
-	 * ¨ú±oCreditAmount ª÷ÃB
+	 * å–å¾—CreditAmount é‡‘é¡
 	 * @return CreditAmount
 	 */
 	public String getCreditAmount() {
 		return CreditAmount;
 	}
 	/**
-	 * ³]©wCreditAmount ª÷ÃB
+	 * è¨­å®šCreditAmount é‡‘é¡
 	 * @param creditAmount
 	 */
 	public void setCreditAmount(String creditAmount) {
 		CreditAmount = creditAmount;
 	}
 	/**
-	 * ¨ú±oCreditCheckCode °Ó®aÀË¬d½X¦b¼t°Ó«á¥x->«H¥Î¥d¦¬³æ->«H¥Î¥d±ÂÅv¸ê°T¤¤¥i¬d¨ì
+	 * å–å¾—CreditCheckCode å•†å®¶æª¢æŸ¥ç¢¼åœ¨å» å•†å¾Œå°->ä¿¡ç”¨å¡æ”¶å–®->ä¿¡ç”¨å¡æˆæ¬Šè³‡è¨Šä¸­å¯æŸ¥åˆ°
 	 * @return CreditCheckCode
 	 */
 	public String getCreditCheckCode() {
 		return CreditCheckCode;
 	}
 	/**
-	 * ³]©wCreditCheckCode °Ó®aÀË¬d½X¦b¼t°Ó«á¥x->«H¥Î¥d¦¬³æ->«H¥Î¥d±ÂÅv¸ê°T¤¤¥i¬d¨ì
+	 * è¨­å®šCreditCheckCode å•†å®¶æª¢æŸ¥ç¢¼åœ¨å» å•†å¾Œå°->ä¿¡ç”¨å¡æ”¶å–®->ä¿¡ç”¨å¡æˆæ¬Šè³‡è¨Šä¸­å¯æŸ¥åˆ°
 	 * @param creditCheckCode
 	 */
 	public void setCreditCheckCode(String creditCheckCode) {

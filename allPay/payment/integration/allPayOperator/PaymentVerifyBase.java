@@ -23,7 +23,7 @@ public class PaymentVerifyBase{
 	
 	protected void requireCheck(String FieldName, String objValue, String require){
 		if(require.equals("1") && objValue.isEmpty())
-			throw new AllPayException(FieldName+"¨∞•≤∂Ò");
+			throw new AllPayException(FieldName+"ÁÇ∫ÂøÖÂ°´");
 	}
 	
 	protected void valueCheck(String type, String objValue, Element ele){
@@ -55,13 +55,13 @@ public class PaymentVerifyBase{
 			}
 			int value = Integer.valueOf(objValue);
 			if(mode.equals("GE") && value < Integer.valueOf(minimum)){
-				throw new AllPayException(ele.getAttribute("name")+"§£Ø‡§p©Û"+minimum);
+				throw new AllPayException(ele.getAttribute("name")+"‰∏çËÉΩÂ∞èÊñº"+minimum);
 			} else if(mode.equals("LE") && value > Integer.valueOf(maximum)){
-				throw new AllPayException(ele.getAttribute("name")+"§£Ø‡§j©Û"+maximum);
+				throw new AllPayException(ele.getAttribute("name")+"‰∏çËÉΩÂ§ßÊñº"+maximum);
 			} else if(mode.equals("BETWEEN") && value < Integer.valueOf(minimum) && value > Integer.valueOf(maximum)){
-				throw new AllPayException(ele.getAttribute("name")+"•≤∂∑§∂©Û"+minimum+"©M"+maximum+"§ß∂°");
+				throw new AllPayException(ele.getAttribute("name")+"ÂøÖÈ†à‰ªãÊñº"+minimum+"Âíå"+maximum+"‰πãÈñì");
 			} else if(mode.equals("EXCLUDE") && value >= Integer.valueOf(minimum) && value <= Integer.valueOf(maximum)){
-				throw new AllPayException(ele.getAttribute("name")+"•≤∂∑§p©Û"+minimum+"©Œ§j©Û"+maximum);
+				throw new AllPayException(ele.getAttribute("name")+"ÂøÖÈ†àÂ∞èÊñº"+minimum+"ÊàñÂ§ßÊñº"+maximum);
 			}
 		} else if(type.equals("DepOpt")){
 			// TODO
