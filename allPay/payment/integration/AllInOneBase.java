@@ -30,16 +30,16 @@ public class AllInOneBase {
 	protected static String aioChargebackUrl;
 	protected static String[] ignorePayment;
 	public AllInOneBase(){
-		try{
+//		try{
 			Document doc;
 			
 			/* when using web project, please use the following code with try/catch wrapped*/
-			ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-			String configPath = URLDecoder.decode(classLoader.getResource("/payment_conf.xml").getPath(), "UTF-8");
-			doc = AllPayFunction.xmlParser(configPath);
+//			ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+//			String configPath = URLDecoder.decode(classLoader.getResource("/payment_conf.xml").getPath(), "UTF-8");
+//			doc = AllPayFunction.xmlParser(configPath);
 			/* when using testing code*/
-//			String paymentConfPath = "./src/main/resources/payment_conf.xml";
-//			doc = AllPayFunction.xmlParser(paymentConfPath);
+			String paymentConfPath = "./src/main/resources/payment_conf.xml";
+			doc = AllPayFunction.xmlParser(paymentConfPath);
 			
 			doc.getDocumentElement().normalize();
 			//OperatingMode
@@ -72,9 +72,9 @@ public class AllInOneBase {
 			if(HashKey == null){
 				throw new AllPayException(ErrorMessage.MInfo_NOT_SETTING);
 			}
-		} catch (UnsupportedEncodingException e) {
+//		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//			e.printStackTrace();
+//		}
 	}
 }

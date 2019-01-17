@@ -122,12 +122,6 @@ public class AioCheckOutOneTime {
 	private String PlatformID = "";
 	
 	/**
-	 * InvoiceMark
-	 * 電子發票開立註記，程式自動判斷
-	 */
-	private String InvoiceMark = "";
-	
-	/**
 	 * HoldTradeAMT
 	 * 是否延遲撥款
 	 */
@@ -445,20 +439,6 @@ public class AioCheckOutOneTime {
 		PlatformID = platformID;
 	}
 	/**
-	 * 取得InvoiceMark 電子發票開立註記
-	 * @return InvoiceMark
-	 */
-	public String getInvoiceMark() {
-		return InvoiceMark;
-	}
-	/**
-	 * 設定InvoiceMark 電子發票開立註記
-	 * @param invoiceMark
-	 */
-	public void setInvoiceMark(String invoiceMark) {
-		InvoiceMark = invoiceMark;
-	}
-	/**
 	 * 取得HoldTradeAMT 是否延遲撥款
 	 * 1. 若為不延遲撥款，請帶：0，買方付款完成後，歐付寶依合約約定之時間，撥款給會員 
 	 * 2. 若為延遲撥款，請帶：1，買方付 款完成後，需再呼叫「會員申請撥 款退款」API，讓歐付寶撥款給會 員，或退款給買方。
@@ -556,8 +536,7 @@ public class AioCheckOutOneTime {
 				+ ", ReturnURL=" + ReturnURL + ", ChoosePayment=" + ChoosePayment + ", ClientBackURL=" + ClientBackURL
 				+ ", ItemURL=" + ItemURL + ", Remark=" + Remark + ", ChooseSubPayment=" + ChooseSubPayment
 				+ ", OrderResultURL=" + OrderResultURL + ", NeedExtraPaidInfo=" + NeedExtraPaidInfo + ", DeviceSource="
-				+ DeviceSource + ", IgnorePayment=" + IgnorePayment + ", PlatformID=" + PlatformID + ", InvoiceMark="
-				+ InvoiceMark + ", HoldTradeAMT=" + HoldTradeAMT + ", EncryptType=" + EncryptType + ", UseRedeem="
+				+ DeviceSource + ", IgnorePayment=" + IgnorePayment + ", PlatformID=" + PlatformID + ", HoldTradeAMT=" + HoldTradeAMT + ", EncryptType=" + EncryptType + ", UseRedeem="
 				+ UseRedeem + ", Redeem=" + Redeem + "]";
 	}
 }
