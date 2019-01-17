@@ -6,6 +6,7 @@ import allPay.payment.integration.AllInOne;
 import allPay.payment.integration.domain.AioChargebackObj;
 import allPay.payment.integration.domain.AioCheckOutALL;
 import allPay.payment.integration.domain.AioCheckOutATM;
+import allPay.payment.integration.domain.AioCheckOutAccountLink;
 import allPay.payment.integration.domain.AioCheckOutCVS;
 import allPay.payment.integration.domain.AioCheckOutDevide;
 import allPay.payment.integration.domain.AioCheckOutOneTime;
@@ -13,6 +14,7 @@ import allPay.payment.integration.domain.AioCheckOutPeriod;
 import allPay.payment.integration.domain.AioCheckOutTenpay;
 import allPay.payment.integration.domain.AioCheckOutTopUpUsed;
 import allPay.payment.integration.domain.AioCheckOutWebATM;
+import allPay.payment.integration.domain.AioCheckOutWeiXinpay;
 import allPay.payment.integration.domain.CaptureObj;
 import allPay.payment.integration.domain.DoActionObj;
 import allPay.payment.integration.domain.FundingReconDetailObj;
@@ -27,24 +29,26 @@ public class ExampleAllInOne {
 	public static AllInOne all;
 	public static void main(String[] args) {
 		initial();
-		System.out.println("compare CheckMacValue method testing result: " + cmprChkMacValue());
-		System.out.println("doAction: " + postDoAction());
-		System.out.println("queryTradeInfo: " + postQueryTradeInfo());
-		System.out.println("queryCreditCardPeriodInfo: " + postQueryCreditCardPeriodInfo());
-		System.out.println("capture: " +postCapture());
-		System.out.println("queryTrade: " + postQueryTrade());
-		System.out.println("tradeNoAio: " + postTradeNoAio());
-		System.out.println("fundingReconDetail: " + postFundingReconDetail());
-		System.out.println("aioChargeback: " + postAioChargeback());
-		System.out.println("aioCheckOutALL: " + genAioCheckOutALL());
-		System.out.println("aioCheckOutATM: " + genAioCheckOutATM());
-		System.out.println("aioCheckOutCVS: " + genAioCheckOutCVS());
+//		System.out.println("compare CheckMacValue method testing result: " + cmprChkMacValue());
+//		System.out.println("doAction: " + postDoAction());
+//		System.out.println("queryTradeInfo: " + postQueryTradeInfo());
+//		System.out.println("queryCreditCardPeriodInfo: " + postQueryCreditCardPeriodInfo());
+//		System.out.println("capture: " +postCapture());
+//		System.out.println("queryTrade: " + postQueryTrade());
+//		System.out.println("tradeNoAio: " + postTradeNoAio());
+//		System.out.println("fundingReconDetail: " + postFundingReconDetail());
+//		System.out.println("aioChargeback: " + postAioChargeback());
+//		System.out.println("aioCheckOutALL: " + genAioCheckOutALL());
+//		System.out.println("aioCheckOutATM: " + genAioCheckOutATM());
+//		System.out.println("aioCheckOutCVS: " + genAioCheckOutCVS());
 		System.out.println("aioCheckOutDevide: " + genAioCheckOutDevide());
-		System.out.println("aioCheckOutOneTime: " + genAioCheckOutOneTime());
-		System.out.println("aioCheckOutPeriod: " + genAioCheckOutPeriod());
-		System.out.println("aioCheckOutWebATM: " + genAioCheckOutWebATM());
-		System.out.println("aioCheckOutTenpay: " + genAioCheckOutTenpay());
-		System.out.println("aioCheckOutTopUpUsed: " + genAioCheckOutTopUpUsed());
+//		System.out.println("aioCheckOutOneTime: " + genAioCheckOutOneTime());
+//		System.out.println("aioCheckOutPeriod: " + genAioCheckOutPeriod());
+//		System.out.println("aioCheckOutWebATM: " + genAioCheckOutWebATM());
+//		System.out.println("aioCheckOutTenpay: " + genAioCheckOutTenpay());
+//		System.out.println("aioCheckOutTopUpUsed: " + genAioCheckOutTopUpUsed());
+		System.out.println("aioCheckOutAccountLink: " + genAioCheckOutAccountLink());
+		System.out.println("aioCheckOutWeiXinpay: " + genAioCheckOutWeiXinpay());
 	}
 	private static void initial(){
 		all = new AllInOne("");
@@ -149,7 +153,37 @@ public class ExampleAllInOne {
 	
 	public static String genAioCheckOutALL(){
 		AioCheckOutALL obj = new AioCheckOutALL();
-		obj.setMerchantTradeNo("testCompany0004");
+		obj.setMerchantTradeNo("asdfsdfwewerwerwsdf");
+		obj.setMerchantTradeDate("2017/01/01 08:05:23");
+		obj.setTotalAmount("50");
+		obj.setTradeDesc("test Description");
+		obj.setItemName("TestItem");
+		obj.setReturnURL("http://211.23.128.214:5000");
+		obj.setNeedExtraPaidInfo("N");
+		obj.setHoldTradeAMT("0");
+		obj.setUseRedeem("N");
+		String form = all.aioCheckOut(obj, null);
+		return form;
+	}
+	
+	public static String genAioCheckOutWeiXinpay(){
+		AioCheckOutWeiXinpay obj = new AioCheckOutWeiXinpay();
+		obj.setMerchantTradeNo("ugufljldeiueiuo");
+		obj.setMerchantTradeDate("2017/01/01 08:05:23");
+		obj.setTotalAmount("50");
+		obj.setTradeDesc("test Description");
+		obj.setItemName("TestItem");
+		obj.setReturnURL("http://211.23.128.214:5000");
+		obj.setNeedExtraPaidInfo("N");
+		obj.setHoldTradeAMT("0");
+		obj.setUseRedeem("N");
+		String form = all.aioCheckOut(obj, null);
+		return form;
+	}
+	
+	public static String genAioCheckOutAccountLink(){
+		AioCheckOutAccountLink obj = new AioCheckOutAccountLink();
+		obj.setMerchantTradeNo("testCompany0006");
 		obj.setMerchantTradeDate("2017/01/01 08:05:23");
 		obj.setTotalAmount("50");
 		obj.setTradeDesc("test Description");
@@ -216,7 +250,7 @@ public class ExampleAllInOne {
 	
 	public static String genAioCheckOutDevide(){
 		AioCheckOutDevide obj = new AioCheckOutDevide();
-		obj.setMerchantTradeNo("testCompany0007");
+		obj.setMerchantTradeNo("dfshfdlksdjhflksjh");
 		obj.setMerchantTradeDate("2017/01/01 08:05:23");
 		obj.setTotalAmount("50");
 		obj.setTradeDesc("test Description");
@@ -225,8 +259,7 @@ public class ExampleAllInOne {
 		obj.setNeedExtraPaidInfo("N");
 		obj.setHoldTradeAMT("0");
 		obj.setUseRedeem("N");
-		obj.setCreditInstallment("3");
-		obj.setInstallmentAmount("10");
+		obj.setCreditInstallment("3,6,12,18,24");
 		String form = all.aioCheckOut(obj, null);
 		return form;
 	}

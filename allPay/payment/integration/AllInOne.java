@@ -420,7 +420,11 @@ public class AllInOne extends AllInOneBase{
 			} else {
 				((AioCheckOutAccountLink) obj).setMerchantID(MerchantID);
 			}
+<<<<<<< HEAD
 			
+=======
+			((AioCheckOutAccountLink) obj).setInvoiceMark(invoice == null? "N" : "Y");
+>>>>>>> c4232d7404d4ce3918d095abfc0dbf74f29dda88
 			log.info("aioCheckOutAccountLink params: " + ((AioCheckOutAccountLink) obj).toString());
 		} else if(obj instanceof AioCheckOutWeiXinpay){
 			((AioCheckOutWeiXinpay) obj).setPlatformID(PlatformID);
@@ -430,7 +434,11 @@ public class AllInOne extends AllInOneBase{
 			} else {
 				((AioCheckOutWeiXinpay) obj).setMerchantID(MerchantID);
 			}
+<<<<<<< HEAD
 			
+=======
+			((AioCheckOutWeiXinpay) obj).setInvoiceMark(invoice == null? "N" : "Y");
+>>>>>>> c4232d7404d4ce3918d095abfc0dbf74f29dda88
 			log.info("aioCheckOutWeiXinpay params: " + ((AioCheckOutWeiXinpay) obj).toString());
 		}else if(obj instanceof AioCheckOutTopUpUsed){
 			((AioCheckOutTopUpUsed) obj).setPlatformID(PlatformID);
